@@ -1,7 +1,7 @@
 html, body{
     font-family: 'Open Sans', sans-serif;
     font-size: 100%;
-  	background: #FFf;
+  	/* background: #FFf; */
 }
 #home {
     /* background: url(../images/bg_cyber.jpg) no-repeat center top; */
@@ -98,4 +98,10 @@ ul.address-text b {
 .header-left img {
     width: 100%;
     margin-top: 19px;
+}
+
+/* about */
+
+#about {
+    background-color: black;
 }

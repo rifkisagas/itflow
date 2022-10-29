@@ -2,11 +2,6 @@
     font-family: xirod;
     src: url(../fonts/xirod.ttf);
 }
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 header{
     background: url(../images/cyberbg.png) no-repeat center ;
     /* background-size: 2400px; */
@@ -23,8 +18,9 @@ header{
 }
 nav {
     position: fixed;
+    z-index: 99;
     width: 100%;
-    line-height: 60px;
+    line-height: 40px;
 }
 
 nav ul {
@@ -41,6 +37,7 @@ nav ul {
 }
 nav.black ul {
     background: #000;
+    /* position: absolute; */
 }
 
 nav ul li {
@@ -53,21 +50,11 @@ nav ul li a {
     color: #fff;
     font-size: 16px;
 }
-.menu-icon {
-    line-height: 60px;
-    width: 100%;
-    background: #000;
-    text-align: right;
-    box-sizing: border-box;
-    padding: 15px 24px;
-    cursor: pointer;
-    color: #fff;
-    display: none;
-}
 
 body{
     font-family: 'Poppins', sans-serif;
     font-weight: lighter;
+    position: relative;
 }
 
 .container-p1{
@@ -117,4 +104,179 @@ header:after{
     font-weight: 600;
     color: rgb(139, 147, 182);
     /* font-family: xirod; */
+}
+.big-title-out.aos-animate{
+    opacity: 0;
+}
+
+/* about */
+
+.about{
+    background-color: #fff;
+    padding-top: 60px;
+    text-align: center;
+    color: #151515;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.about-title{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.about-desc{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    padding-bottom: 20px;
+}
+
+.about-port{
+    padding-bottom: 40px;
+    width: 80%;
+    margin: auto;
+}
+
+/* Service */
+
+.service{
+    background-color: #000;
+    padding-top: 40px;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.service-title{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    padding-bottom: 30px;
+    color: #fff;
+}
+.cg-custom{
+    padding-bottom: 60px;
+}
+
+/* Contact */
+.contact{
+    background-color: rgba(150, 150, 150, 0.651);
+    padding-top: 40px;
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 40px;
+}
+.contact-left{
+    opacity: 0.6;
+    background: url(/images/skyscrapper.jpg);
+    background-size: cover;
+    color: #fff;
+    height: 850px;
+}
+.contact-right{
+    background: #fff;
+    padding-top: 40px;
+}
+
+.contact-right-title{
+    font-family: 'Poppins', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.contact-right-form{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.contact-right-form label{
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
+}
+
+.custom{
+    padding-bottom: 20px;
+}
+
+/* Founder */
+
+.founder{
+    background: url(/images/bg.jpg);
+    padding-top: 40px;
+    /* text-align: center; */
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 870px;
+}
+.info{
+    background:rgba(23, 20, 20, 0.58);
+    margin-top: 4em;
+}
+.info-right{
+    padding: 3em;
+    padding-left: 3em;
+}
+.info-right h1 {
+    font-size: 1.5em;
+    color: #fff;
+    margin: 0.5em 0 0;
+    font-weight: bold;
+    background: #0583D2;
+    display: inline-block;
+    padding: .5em 1.5em;
+    position: relative;
+	    /* box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19); */
+}
+.info-right h1:before {
+    position: absolute;
+    content: '';
+    bottom: -9px;
+    left: 12px;
+    border-style: solid;
+    border-width: 14px 11px 0 12px;
+    border-color: #0583D2 transparent transparent transparent;
+}
+.info-right h6 {
+    font-size: 1em;
+    color: #C7C7C7;
+    margin-top: 0.8em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+ul.address {
+    margin-top: 2em;
+    border-top: 1px solid #AFAFAF;
+    padding-top: 0.5em;
+}
+ul.address li {
+    display: block;
+}
+ul.address li ul.address-text li {
+    display: inline-block;
+    font-size: 1em;
+    color: #fff;
+    margin-top: 1em;
+	font-weight: 400;
+}
+ul.address li ul.address-text li a {
+    color: #fff;
+	text-decoration:none;
+}
+ul.address li ul.address-text li a:hover{
+    color: #0583D2;
+}
+ul.address-text {
+    padding: 0;
+}
+ul.address-text b {
+    color:#fff;
+}
+ul.address li ul.address-text li:nth-child(1){
+	width: 20%;
+}
+.info-right {
+    padding-right: 20px;
+}
+.info-right img {
+    width: 80%;
+    margin-top: 19px;
+    /* padding-right: 60px; */
 }
